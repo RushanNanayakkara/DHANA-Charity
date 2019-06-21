@@ -10,16 +10,15 @@
         <title>Document</title>
     </head>
 <body>
-    
     <div class="container" style="width:50vw; height:60vh; overflow-y: scroll;">
         <?php 
-        $this->load->view('component/RequirementModal');
-            for($i=0; $i<10; $i++){
-                $this->load->view('component/Contentbox',$userdata);
+            $this->load->view('component/RequirementModal');
+            foreach($requirementList as $requirement){
+                $this->load->view('component/Contentbox',array('requirement'=>$requirement));
             }
         ?>
     </div>
-    
+
 <script src="../../../util/js/component.js"></script>
 </body>
 </html>
