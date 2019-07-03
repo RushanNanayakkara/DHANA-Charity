@@ -1,0 +1,56 @@
+navbar
+=======
+Add code to choose the links in the navbar according to the user //Excluded
+
+content box
+===========
+requirements content box //done
+    - data username category required-date //done
+    - remove description //done
+create content boxes to show 
+    - Pending donations
+    - add donor name, donee name, amount
+create content box to show membership requests
+    - username 
+    - profile pic
+    - account type
+
+create modals for
+    - donations
+        - buttons (accept, deny, cancel)
+    - User prifiles
+        - buttons (accept, deny, cancel)
+    - 
+
+Admin Dashboard
+===============
+create footer
+
+Make graph functional
+
+make status bar functional //done
+
+Search
+=======
+search users
+    filter by 
+    - user type
+    - user name
+    - user type
+search requirements
+    filter by
+    - user name
+    - requirement type
+    - date period
+search donations
+    filter by
+    - donor name
+    - donee name
+    - date range
+    - amount range
+
+Account
+=======
+Display user account data
+Allow editing account data
+Include option to change password
