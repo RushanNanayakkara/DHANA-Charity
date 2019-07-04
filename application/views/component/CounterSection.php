@@ -54,7 +54,7 @@
                         <h6 class="text-white font-14 op-7">New Membership<br>Requests</h6>
                     </div>
                 </div>
-                <!-- column  -->
+                <!-- column  --> 
             </div>
         </div>
     </div> 

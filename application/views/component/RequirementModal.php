@@ -4,17 +4,17 @@
 #to update the content the controller has to be chosen according to the account type
 ?>
 
-<div class="modal fade" id="modal-form">
+<div class="modal fade" id="requirement-modal-form">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
 
             <div class="modal-header">
-                <h1 id="modal-title"></h1>
+                <h1 id="req-modal-title"></h1>
             </div>
 
             <!-- WARNINGS -->
-            <div id="alert-success" class="alert alert-success" style="display:none"></div>
-            <div id="alert-fail" class="alert alert-danger" style="display:none"></div>
+            <div id="req-modal-alert-success" class="alert alert-success" style="display:none"></div>
+            <div id="req-modal-alert-fail" class="alert alert-danger" style="display:none"></div>
             <div class="modal-body">
                 <?php
                     $this->load->view('forms/requirement-form');
@@ -22,16 +22,16 @@
             </div>
 
             <div class="modal-footer pull-right">
-                    <input id="btn-modal-approve" type="button" class="btn btn-dark col-2 "  value="Approve">
-                    <input id="btn-modal-decline" type="button" class="btn btn-danger col-2 "  value="Decline">
-                    <input id="btn-modal-cancel" type="button" class="btn btn-primary col-2 " data-dismiss="modal" value="Cancel">
+                    <input id="req-modal-btn-approve" type="button" class="btn btn-dark col-2 "  value="Approve">
+                    <input id="req-modal-btn-decline" type="button" class="btn btn-danger col-2 "  value="Decline">
+                    <input id="req-modal-btn-cancel" type="button" class="btn btn-primary col-2 " data-dismiss="modal" value="Cancel">
             </div>
             
             <script>
                 $(document).ready(function () {
                     
                     function clearForm(){
-                        $('#modal-title').html("");
+                        $('#req-modal-title').html("");
                         $('#req-form-DNEID').val("");
                         $('#req-form-reqID').val("");
                         $('#req-form-title').val("");
@@ -44,7 +44,7 @@
                         $('#req-form-status').removeClass('badge-warning badge-success badge-danger');
                     }
 
-                    $('#btn-modal-approve').click(function(e){
+                    $('#req-modal-btn-approve').click(function(e){
                         $.ajax({
                             type:'POST',
                             url:'<?=base_url()?>CTRL_RequirementForm/updateRequirement',
@@ -133,7 +133,7 @@
                     //     });
                     // });
 
-                    $('#modal-form').on('hidden.bs.modal',function(){
+                    $('#requirement-modal-form').on('hidden.bs.modal',function(){
                         $("#alert-success").hide()
                         $("#alert-fail").hide()
                         clearForm();
@@ -141,7 +141,6 @@
 
                 });
 
-                
             </script>
 
         </div>

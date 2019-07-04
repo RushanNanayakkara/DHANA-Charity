@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<div class="container alert content-box" style="background-color:whitesmoke">
+<div class="container alert requirement-content-box" style="background-color:whitesmoke">
     <div class="row content-box-title">
         <h5><?=$requirement['Title']?></h5>
     </div>

@@ -68,8 +68,9 @@
     </div>
     <div id="requirement-list" class="container mt-3 mb-3 ml-0 mr-auto p-4 col-4 float-left" style=" height:60vh; overflow-y: scroll;">
         <?php 
-            foreach($requirementList as $requirement){
-                $this->load->view('component/Requirement_Contentbox',array('requirement'=>$requirement));
+            $this->load->view('component/DonationModal');
+            foreach($donationList as $donation){
+                $this->load->view('component/Donation_Contentbox',array('donation'=>$donation,'donorName'=>$donorNameList[$donation['DNRID']]));
             }
         ?>
     </div>

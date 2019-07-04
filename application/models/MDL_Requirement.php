@@ -48,6 +48,6 @@ class MDL_Requirement extends CI_Model{
 
     }
 
-}
+} 
 
 ?>

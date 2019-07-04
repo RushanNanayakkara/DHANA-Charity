@@ -48,11 +48,11 @@ class CTRL_RequirementForm extends CI_Controller{
         echo $this->MDL_Requirement->deleteRequirement($reqID);
     }
 
-    public function getDoneeName(){
-        $this->load->model('MDL_Donee');
-        $name = $this->input->get('DNEID');
-        echo $this->MDL_Donee->getName($name);
-    }
+    // public function getDoneeName(){
+    //     $this->load->model('MDL_Donee');
+    //     $name = $this->input->get('DNEID');
+    //     echo $this->MDL_Donee->getName($name);
+    // }
 
 
 }
